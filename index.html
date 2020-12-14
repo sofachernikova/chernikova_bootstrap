@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="description">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Chernikova_bootstrap</title>
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="#blok1">Введение</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#blok2">*Ссылка*</a>
+                        <a class="nav-link" href="#blok2">Двухзвенная и трёхзвенная архитектура</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#blok3">*Ссылка*</a>
@@ -30,14 +30,14 @@
                     </ul>
                   </div>
                   <div class="dropdown col col-lg-1 mr-3 mt-2">
-                    <button class="btn btn-secondary dropdown-toggle bg-warning" width="20px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle bg-warning" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Вход
                     </button>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                     <form class="px-4 py-3">
                       <div class="form-group">
-                        <label for="exampleDropdownFormLogin">Email</label>
-                        <input type="login" class="form-control" id="exampleDropdownFormLogin" placeholder="Введите логин">
+                        <label for="exampleDropdownFormLogin">E-mail</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormLogin" placeholder="Введите e-mail">
                       </div>
                       <div class="form-group">
                         <label for="exampleDropdownFormPassword1">Пароль</label>
@@ -58,84 +58,136 @@
                   </div>
               </nav>
             </div>
-        <a name="start"></a>
+        <a id="start"></a>
         <div class="row mt-5 pt-5"></div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/1.jpg" class="d-block w-100" alt="photo1">
-        </div>
-        <div class="carousel-item">
-          <img src="img/2.jpg" class="d-block w-100" alt="photo2">
-        </div>
-        <div class="carousel-item">
-          <img src="img/3.jpg" class="d-block w-100" alt="photo3">
-        </div>
-      </div>
-      <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    </div>
-    <section>
-        <div class="row mt-2">
-          <h2 class="text-center col-12 mb-2"><a name="blok1" class="d-block mb-3 pb-6"></a>Введение</h2>
-          <div class="col-12 mx-auto text-justify">
-            <div class="beginning">
-                <p class="text-break">
-                    <strong>Веб-приложение</strong> – это клиент-серверное приложение, в котором клиентом выступает браузер, а сервером – веб-сервер (в широком смысле).
-                </p>
-                <p class="text-break">
-                    Основная часть приложения, как правило, находится на стороне веб-сервера, который обрабатывает полученные запросы в соответствии с бизнес-логикой продукта и формирует ответ, отправляемый пользователю. На этом этапе в работу включается браузер, именно он преобразовывает полученный ответ от сервера в графический интерфейс, понятный пользователю.
-                </p>
-                <p class="text-break">
-                    <strong>Архитектура «клиент-сервер»</strong> определяет общие принципы организации взаимодействия в сети, где имеются серверы, узлы-поставщики некоторых специфичных функций (сервисов) и клиенты (потребители этих функций).
-                    <br>
-                    Практические реализации такой архитектуры называются <strong>клиент-серверными технологиями.</strong>
-                </p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" alt="photo1">
+            </div>
+            <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="photo2">
+            </div>
+            <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="photo3">
             </div>
         </div>
-            <p class="text-break">
-                Расположение компонентов на стороне клиента или сервера определяет следующие основные модели их взаимодействия в рамках двухзвенной архитектуры:
-            </p>
-            <ul class="">
-              <li class=""><strong>Сервер терминалов</strong> — распределенное представление данных.</li>
-              <li class=""><strong>Файл-сервер</strong> — доступ к удаленной базе данных и файловым ресурсам.</li>
-              <li class=""><strong>Сервер БД</strong> — удаленное представление данных.</li>
-              <li class=""><strong>Сервер приложений</strong> — удаленное приложение.</li>
-            </ul>
-          </div>
-          <button type="button" class="btn btn-primary mt-2 mx-auto col-12 bg-success" data-toggle="modal" data-target="#exampleModal">
-            Источник
-          </button>
-          <!-- Модальное окно -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Источник:</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body text-center">
-                  <a href="https://sergeygavaga.gitbooks.io/kurs-lektsii-testirovanie-programnogo-obespecheni/content/lektsiya-6-ch1-arhitektura-klient-server.html" class="text-break">https://www.opennet.ru/docs/RUS/ip_network/glava_2.html</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
         </div>
-    </section>
+        </div>
+        <section>
+            <div class="row mt-2">
+            <h2 class="text-center col-12 mb-2"><a id="blok1" class="d-block mb-3 pb-6"></a>Введение</h2>
+            <div class="col-12 mx-auto text-justify">
+                <div class="beginning">
+                    <p class="text-break">
+                        <strong>Веб-приложение</strong> – это клиент-серверное приложение, в котором клиентом выступает браузер, а сервером – веб-сервер (в широком смысле).
+                    </p>
+                    <p class="text-break">
+                        Основная часть приложения, как правило, находится на стороне веб-сервера, который обрабатывает полученные запросы в соответствии с бизнес-логикой продукта и формирует ответ, отправляемый пользователю. На этом этапе в работу включается браузер, именно он преобразовывает полученный ответ от сервера в графический интерфейс, понятный пользователю.
+                    </p>
+                    <p class="text-break">
+                        <strong>Архитектура «клиент-сервер»</strong> определяет общие принципы организации взаимодействия в сети, где имеются серверы, узлы-поставщики некоторых специфичных функций (сервисов) и клиенты (потребители этих функций).
+                        <br>
+                        Практические реализации такой архитектуры называются <strong>клиент-серверными технологиями.</strong>
+                    </p>
+                </div>
+            </div>
+                <p class="text-break">
+                    Расположение компонентов на стороне клиента или сервера определяет следующие основные модели их взаимодействия в рамках двухзвенной архитектуры:
+                </p>
+                <ul class="">
+                <li class=""><strong>Сервер терминалов</strong> — распределенное представление данных.</li>
+                <li class=""><strong>Файл-сервер</strong> — доступ к удаленной базе данных и файловым ресурсам.</li>
+                <li class=""><strong>Сервер БД</strong> — удаленное представление данных.</li>
+                <li class=""><strong>Сервер приложений</strong> — удаленное приложение.</li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-primary mt-2 mx-auto col-12 bg-success" data-toggle="modal" data-target="#exampleModal">
+                Источник
+            </button>
+            <!-- Модальное окно -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Источник:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body text-center">
+                    <a href="https://sergeygavaga.gitbooks.io/kurs-lektsii-testirovanie-programnogo-obespecheni/content/lektsiya-6-ch1-arhitektura-klient-server.html" class="text-break">https://www.opennet.ru/docs/RUS/ip_network/glava_2.html</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="text-center">
+                <h2 class="text-center col-12 mb-2"><a id="blok2" class="d-block mb-3 pb-6"></a>Двухзвенная и трёхзвенная архитектура</h2>
+                <h5>Двухзвенная архитектура.</h5>
+                <figure class="figure mt-2">
+                    <img src="img/2zvennaya.png" class="figure-img img-fluid rounded mx-auto d-block" alt="2zvennaya">
+                    <figcaption class="figure-caption text-center">рис. 1. Двухзвенная архитектура.</figcaption>
+                </figure>
+                <div class="col-12 mx-auto text-justify">
+                    <p class="text-break">
+                        <strong>Двухзвенная архитектура</strong> - распределение трех базовых компонентов между двумя узлами (клиентом и сервером). Двухзвенная архитектура используется в клиент-серверных системах, где сервер отвечает на клиентские запросы напрямую и в полном объеме.
+                    </p>
+                    <h5 class="text-center">Базовые понятия.</h5>
+                    <p class="text-break">
+                        <strong>Клиент</strong> – это браузер, но встречаются и исключения (в тех случаях, когда один веб-сервер (ВС1) выполняет запрос к другому (ВС2), роль клиента играет веб-сервер ВС1). В классической ситуации (когда роль клиента выполняет браузер) для того, чтобы пользователь увидел графический интерфейс приложения в окне браузера, последний должен обработать полученный ответ веб-сервера, в котором будет содержаться информация, реализованная с применением HTML, CSS, JS (самые используемые технологии). Именно эти технологии «дают понять» браузеру, как именно необходимо «отрисовать» все, что он получил в ответе.
+                    </p>
+                    <p>
+                        <strong>Веб-сервер</strong> – это сервер, принимающий HTTP-запросы от клиентов и выдающий им HTTP-ответы. Веб-сервером называют как программное обеспечение, выполняющее функции веб-сервера, так и непосредственно компьютер, на котором это программное обеспечение работает. Наиболее распространенными видами ПО веб-серверов являются Apache, IIS и NGINX. На веб-сервере функционирует тестируемое приложение, которое может быть реализовано с применением самых разнообразных языков программирования: PHP, Python, Ruby, Java, Perl и пр.
+                    </p>
+                    <p>
+                        <strong>База данных</strong> - это информационная модель, позволяющая упорядоченно хранить данные об объекте или группе объектов, обладающих набором свойств, которые можно категоризировать. Базы данных функционируют под управлением так называемых систем управления базами данных (далее – СУБД). Самыми популярными СУБД являются MySQL, MS SQL Server, PostgreSQL, Oracle (все – клиент-серверные).
+                    </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <h5 class="text-center">Трёхзвенная архитектура.</h5>
+                    <figure class="figure mt-2">
+                        <img src="img/3zvennaya.png" class="figure-img img-fluid rounded mx-auto d-block" alt="2zvennaya">
+                        <figcaption class="figure-caption text-center">рис. 2. Трёхзвенная архитектура.</figcaption>
+                    </figure>
+                    <div class="col-12 mx-auto text-justify">
+                        <p class="text-break">
+                            <strong>Трёхзвенная архитектура</strong> - сетевое приложение разделено на две и более частей, каждая из которых может выполняться на отдельном компьютере. Выделенные части приложения взаимодействуют друг с другом, обмениваясь сообщениями в заранее согласованном формате.
+                        </p>
+                        <div class="text-break">
+                            Третьим звеном в трехзвенной архитектуре становится сервер приложений, т.е. компоненты распределяются следующим образом:
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">1. Представление данных — на стороне клиента.</li>
+                            <li class="list-group-item">2. Прикладной компонент — на выделенном сервере приложений (как вариант, выполняющем функции промежуточного ПО).</li>
+                            <li class="list-group-item">3. Управление ресурсами — на сервере БД, который и представляет запрашиваемые данные.</li>
+                        </ul>
+                        <p class="text-break">
+                            Трехзвенная архитектура может быть расширена до <strong>многозвенной (N-tier, Multi-tier)</strong> путем выделения дополнительных серверов, каждый из которых будет представлять собственные сервисы и пользоваться услугами прочих серверов разного уровня.
+                        </p>
+                    </div>
+                <figure class="figure mt-2">
+                    <img src="img/mnogozvennaya.png" class="figure-img img-fluid rounded mx-auto d-block" alt="2zvennaya">
+                    <figcaption class="figure-caption text-center">рис. 3. Многозвенная архитектура.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
